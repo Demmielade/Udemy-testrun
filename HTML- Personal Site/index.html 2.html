@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <!--
+    Modified from the Debian original for Ubuntu
+    Last updated: 2014-03-19
+    See: https://launchpad.net/bugs/1288690
+  -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>School Default Page: It works</title>
+    <style media="screen">
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  body, html {
+    padding: 3px 3px 3px 3px;
+
+    background-color: #D8DBE2;
+
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  div.main_page {
+    position: relative;
+    display: table;
+
+    width: 800px;
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 2px;
+    border-color: #212738;
+    border-style: solid;
+
+    background-color: #FFFFFF;
+
+    text-align: center;
+  }
+
+  div.page_header {
+    height: 99px;
+    width: 100%;
+
+    background-color: #F5F6F7;
+  }
+
+  div.page_header span {
+    margin: 15px 0px 0px 50px;
+
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+  div.page_header img {
+    margin: 3px 0px 0px 40px;
+
+    border: 0px 0px 0px;
+  }
+
+  div.table_of_contents {
+    clear: left;
+
+    min-width: 200px;
+
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.table_of_contents_item {
+    clear: left;
+
+    width: 100%;
+
+    margin: 4px 0px 0px 0px;
+
+    background-color: #FFFFFF;
+
+    color: #000000;
+    text-align: left;
+  }
+
+  div.table_of_contents_item a {
+    margin: 6px 0px 0px 6px;
+  }
+
+  div.content_section {
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.content_section_text {
+    padding: 4px 8px 4px 8px;
+
+    color: #000000;
+    font-size: 100%;
+  }
+
+  div.content_section_text pre {
+    margin: 8px 0px 8px 0px;
+    padding: 8px 8px 8px 8px;
+
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000000;
+
+    background-color: #F5F6F7;
+
+    font-style: italic;
+  }
+
+  div.content_section_text p {
+    margin-bottom: 6px;
+  }
+
+  div.content_section_text ul, div.content_section_text li {
+    padding: 4px 8px 4px 16px;
+  }
+
+  div.section_header {
+    padding: 3px 6px 3px 6px;
+
+    background-color: #8E9CB2;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+  }
+
+  div.section_header_red {
+    background-color: #CD214F;
+  }
+
+  div.section_header_grey {
+    background-color: #9F9386;
+  }
+
+  .floating_element {
+    position: relative;
+    float: left;
+  }
+
+  div.table_of_contents_item a,
+  div.content_section_text a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  div.table_of_contents_item a:link,
+  div.table_of_contents_item a:visited,
+  div.table_of_contents_item a:active {
+    color: #000000;
+  }
+
+  div.table_of_contents_item a:hover {
+    background-color: #000000;
+
+    color: #FFFFFF;
+  }
+
+  div.content_section_text a:link,
+  div.content_section_text a:visited,
+   div.content_section_text a:active {
+    background-color: #DCDFE6;
+
+    color: #000000;
+  }
+
+  div.content_section_text a:hover {
+    background-color: #000000;
+
+    color: #DCDFE6;
+  }
+
+  div.validator {
+  }
+    </style>
+    <link href="https://alx-apply.hbtn.io/level2/school.css" rel="stylesheet'>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1> WELCOME </h1>
+    <header>
+      <ul>
+   <li>  <a href="https://alxafrica.com"> Home </a> </li>
+   <li> <a href="http://34.236.33.119/tweets.html"> Tweets </a> </li>
+   <li> <a href="http://34.236.33.119/facts.html"> About Us </a> </li>
+   <li> <a href="http://34.236.33.119/faqs.html"> FAQS </a> </li>
+      </ul>
+      </header>
+    <div class="main_page">
+      <div class="page_header floating_element">
+        <a href="https://alx-apply.hbtn.io">
+	  <img src="https://alx-apply.hbtn.io/brand_alx/alx-logo.png" alt="ALX Logo" class="floating_element">
+	  </a>
+        <span class="floating_element">
+           School Default Page
+        </span>
+      </div>
+<!--      <div class="table_of_contents floating_element">
+        <div class="section_header section_header_grey">
+          TABLE OF CONTENTS
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#about">About</a>
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#changes">Changes</a>
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#scope">Scope</a>
+        </div>
+        <div class="table_of_contents_item floating_element">
+          <a href="#files">Config files</a>
+        </div>
+      </div>
+-->
+      <div class="content_section floating_element">
+
+
+        <div class="section_header section_header_red">
+          <div id="about"></div>
+	  <h2> Linux </h2>
+        </div>
+	  <main>
+	    <article>
+
+        <div class="content_section_text">
+
+               <p> This is the default welcome page used to test the correct
+                operation of the Apache2 server after installation on Ubuntu systems.</p>
+
+	</div>
+
+        <div class="section_header">
+          <div id="changes"></div>
+            <h3> Emacs </h3>
+        </div>
+        <div class="content_section_text">
+
+               <p> Ubuntu's Apache2 default configuration is different from the
+                upstream default configuration, and split into several files optimized for
+                interaction with Ubuntu tools. The configuration system is
+                <b>fully documented in /usr/share/doc/apache2/README.Debian.gz</b>. </p>
+        </div>
+
+        <div class="section_header">
+            <div id="docroot"></div>
+                <h3> Apache2 </h3>
+        </div>
+
+        <div class="content_section_text">
+
+              <p> By default, Ubuntu does not allow access through the web browser to
+                <em>any</em> file apart of those located in <i>/var/www</i>,
+                <a href="http://httpd.apache.org/docs/2.4/mod/mod_userdir.html">public_html</a>
+                directories (when enabled) and <i>/usr/share</i> (for web
+                applications).</p>
+        </div>
+
+        <div class="section_header">
+          <div id="bugs"></div>
+            <h3> Project </h3>
+	</div>
+        <div class="content_section_text">
+
+	      <p>Please the <i>ubuntu-bug </i> tool to report bugs in the
+                Apache2 package with Ubuntu.However, check <a
+                href="https://bugs.launchpad.net/ubuntu/+source/apache2">existing
+                bug reports</a> before reporting a new bug. </p>
+            </div>
+	    </article>
+	<aside> <p> placeholder to add comment thread later </p> </aside>
+
+</main>
+
+    </div>
+    </div>
+    <div class="validator">
+    </div>
+  </body>
+</html>
